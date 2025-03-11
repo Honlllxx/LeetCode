@@ -10,7 +10,6 @@ public class the100a07 {
         int max_right = 0;
         int left = 1;
         int right = height.length - 2;
-
         // 使用双指针法，当 left 小于 right 时继续循环
         while (left <= right) {
             if (height[left - 1] < height[right + 1]) {
@@ -36,10 +35,8 @@ public class the100a07 {
         return sum;
     }
 
-
    public static void main(String[] args) {
     System.out.println("========================================");
-
     int []arr={4,4,5,8,5,5,0};
     System.out.println(trap(arr));
     System.out.println("========================================");
